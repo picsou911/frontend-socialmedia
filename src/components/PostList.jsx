@@ -3,25 +3,31 @@ import Datas from '../FakeData';
 import Post from './Post';
 
 class PostList extends Component {
+   
+    constructor(props){
+       super(props)
+       this.state = {
+           posts : []
+       }
+   }
+   componentDidMount (){
+       this.setState({posts : Datas})
+   }
     render() {
-        let post = Datas[0]
-        let post2 = Datas[1]
+        
+       const postComponents =  Datas.map(post => (
+            <Post
+            key = {'post-'+post.id}
+            name = {post.name}
+            date = {post.date}
+            content = {post.content}
+            likes = {post.likes}
+            comments = {post.comments}
+            />
+        ))
         return (
             <div>
-               <Post
-                name = {post.name}
-                date = {post.date}
-                content = {post.content}
-                likes = {post.likes}
-                comments = {post.comments}
-               /> 
-               <Post
-                name = {post2.name}
-                date = {post2.date}
-                content = {post2.content}
-                likes = {post2.likes}
-                comments = {post2.comments}
-               /> 
+               {postComponents}
             </div>
         );
     }
