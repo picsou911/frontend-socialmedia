@@ -16,7 +16,7 @@ import Signup from "./pages/Signup";
 ReactDOM.render(
   <React.StrictMode>
     <Router>
-      <Navbar/>
+      {/* <Navbar/> */}
       <Switch>
         <Route exact path='/' component = {Home}/>
         <Route exact path='/login' component = {login}/>
