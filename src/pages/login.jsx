@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { withStyles, Grid, Typography, TextField, Button } from "@material-ui/core";
 import {Link} from "react-router-dom";
+import AppIcon from "../images/logo.png"
 
 const styles = {
   form: {
@@ -16,7 +17,7 @@ class login extends Component {
       <Grid container className = {classes.form}>
         <Grid item sm/>
         <Grid item sm>
-          <img src= "" alt="" className = {classes.image}/>
+          <img src= {AppIcon} alt="" className = {classes.image}/>
           <Typography variant="h2">
             LOGIN
           </Typography>
