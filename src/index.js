@@ -10,6 +10,7 @@ import {
 import Navbar from './components/Navbar';
 import Home from "./pages/Home";
 import login from "./pages/login";
+import Signup from "./pages/Signup";
 
 
 ReactDOM.render(
@@ -19,7 +20,7 @@ ReactDOM.render(
       <Switch>
         <Route exact path='/' component = {Home}/>
         <Route exact path='/login' component = {login}/>
-        {/* <Route exact path='/' component = {Home}/> */}
+        <Route exact path='/signup' component = {Signup}/>
       </Switch>
       {/* <PostList/> */}
     </Router>
