@@ -2,10 +2,28 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import PostList from './components/PostList';
 import reportWebVitals from './reportWebVitals';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route
+} from "react-router-dom";
+import Navbar from './components/Navbar';
+import Home from "./pages/Home";
+import login from "./pages/login";
+
 
 ReactDOM.render(
   <React.StrictMode>
-    <PostList/>
+    <Router>
+      <Navbar/>
+      <Switch>
+        <Route exact path='/' component = {Home}/>
+        <Route exact path='/login' component = {login}/>
+        {/* <Route exact path='/' component = {Home}/> */}
+      </Switch>
+      {/* <PostList/> */}
+    </Router>
+    
   </React.StrictMode>,
   document.getElementById('root')
 );
