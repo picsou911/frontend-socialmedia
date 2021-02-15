@@ -22,15 +22,20 @@ class login extends Component {
             LOGIN
           </Typography>
           <form>
+            <div>
             <TextField id="email" name="email" type="email" label="email"/>
+            </div>
+            <div>
             <TextField id ="passWord" name="passWord" type="password" label="passWord"/> 
+            </div>
+            <div>
             <Button type="submit" variant="contained" color="primary">Login</Button>
+            </div>
             <br/>
             <small>
               Dont have an accounpt ? Signup <Link to ="/Signup">Here</Link>
             </small>
           </form>
-
         </Grid>
         <Grid item sm/>
       </Grid>

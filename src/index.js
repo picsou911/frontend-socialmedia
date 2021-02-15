@@ -9,18 +9,19 @@ import {
 } from "react-router-dom";
 import Navbar from './components/Navbar';
 import Home from "./pages/Home";
-import login from "./pages/login";
+import Login from "./pages/Login";
 import Signup from "./pages/Signup";
-
+import NotFound from './pages/NotFound';
 
 ReactDOM.render(
   <React.StrictMode>
     <Router>
-      {/* <Navbar/> */}
+      {<Navbar/>}
       <Switch>
-        <Route exact path='/' component = {Home}/>
-        <Route exact path='/login' component = {login}/>
-        <Route exact path='/signup' component = {Signup}/>
+        <Route path='/' exact component = {Home}/>
+        <Route path='/login' component = {Login}/>
+        <Route path='/signup' component = {Signup}/>
+        <Route component={NotFound} />
       </Switch>
       {/* <PostList/> */}
     </Router>

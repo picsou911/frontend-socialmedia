@@ -5,7 +5,7 @@ import { AppBar, Toolbar, Button } from "@material-ui/core";
 export default class Navbar extends Component {
   render() {
     return (
-      <AppBar>
+      <AppBar position="sticky">
         <Toolbar>
           <Button component = {Link} to = '/login'>Login</Button>
           <Button component = {Link} to = '/'>Home</Button>
