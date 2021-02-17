@@ -5,8 +5,15 @@ import AppIcon from "../images/logo.png"
 
 const styles = {
   form: {
-    textAlign: 'center'
+    textAlign: 'center',
+  },
+  image: {
+    marginTop : '15px',
+  },
+  button: {
+    marginTop : '15px',
   }
+
   // TODO : Ajouter le CSS de l'image
 }
 
@@ -15,8 +22,7 @@ class login extends Component {
     const {classes} = this.props
     return (
       <Grid container className = {classes.form}>
-        <Grid item sm/>
-        <Grid item sm>
+        <Grid item xs>
           <img src= {AppIcon} alt="" className = {classes.image}/>
           <Typography variant="h2">
             LOGIN
@@ -29,7 +35,7 @@ class login extends Component {
             <TextField id ="passWord" name="passWord" type="password" label="passWord"/> 
             </div>
             <div>
-            <Button type="submit" variant="contained" color="primary">Login</Button>
+            <Button type="submit" variant="contained" color="primary" className = {classes.button}>Login</Button>
             </div>
             <br/>
             <small>
@@ -37,7 +43,6 @@ class login extends Component {
             </small>
           </form>
         </Grid>
-        <Grid item sm/>
       </Grid>
     )
   }

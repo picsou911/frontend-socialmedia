@@ -5,7 +5,7 @@ class NotFound extends Component {
   render() {
     return (
       <div>
-        cette page n'existe pas! (404 bidule!)
+        cette page n'existe pas! (404 bidule!) 
       <Link to="/">
       Go Home
       </Link>
