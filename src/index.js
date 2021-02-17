@@ -23,7 +23,7 @@ ReactDOM.render(
         <Route path='/signup' component = {Signup}/>
         <Route component={NotFound} />
       </Switch>
-      {/* <PostList/> */}
+      {/* { <PostList/> } */}
     </Router>
     
   </React.StrictMode>,
