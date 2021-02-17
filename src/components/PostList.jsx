@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-//import Datas from '../FakeData';
 import Post from './Post';
+import ProfilePic from '../images/barbu.png'
 
 class PostList extends Component {
     constructor(props){
@@ -20,6 +20,7 @@ class PostList extends Component {
        const postComponents =  this.state.posts.map(post => (
              <Post
               key = {'post-'+post.id}
+              image = {ProfilePic}
               name = {post.name}
               date = {post.date}
               content = {post.content}

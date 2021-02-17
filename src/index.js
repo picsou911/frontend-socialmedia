@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import PostList from './components/PostList';
+//import PostList from './components/PostList';
 import reportWebVitals from './reportWebVitals';
 import {
   BrowserRouter as Router,
@@ -23,7 +23,7 @@ ReactDOM.render(
         <Route path='/signup' component = {Signup}/>
         <Route component={NotFound} />
       </Switch>
-      {/* { <PostList/> } */}
+     
     </Router>
     
   </React.StrictMode>,
